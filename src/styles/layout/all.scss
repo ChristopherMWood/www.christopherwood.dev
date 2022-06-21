@@ -1,0 +1,12 @@
+@import "../variables.scss";
+@import "small.scss";
+ 
+/* Medium screen devices (768px and above) */
+@media only screen and (min-width: $medium) {
+    @import "medium.scss";
+}
+ 
+/* Extra big screen devices (1200px and above) */
+@media only screen and (min-width: $large) {
+    @import "large.scss";
+}
