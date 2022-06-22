@@ -1,38 +1,40 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./styles.scss";
-// import ContactModal from "../contact/contact"
 
 function GlobalNav() {
   const location = useLocation();
-  const [hideHome, setHideHome] = React.useState(true);
-  const [navigatingFromHome, setNavigatingFromHome] = React.useState(false);
-  // const [contactModalOpen, setContactModalOpen] = React.useState(false);
+  const [firstLoad, setFirstLoad] = React.useState(true);
+  const [navClasses, setNavClasses] = React.useState('');
+  const [homeButtonClasses, setHomeButtonClasses] = React.useState('btn draw-border');
 
   React.useEffect(() => {
-    console.log(location);
-    setHideHome(location.pathname === '/');
+    if (firstLoad) {
+      if (location.pathname === '/') {
+        setHomeButtonClasses('btn draw-border no-opacity');
+      } else {
+        setNavClasses('nav-border');
+      }
+      setFirstLoad(false);
+    }
   }, [location])
 
-  React.useEffect(() => {
-    if (navigatingFromHome) {
-      console.log('TRANSITION FROM HOME');
-      //ANIMATE AWAY BORDER AND HOME BUTTON
-    } else {
-      //ANIMATE IN BORDER AND HOME BUTTON
-    }
-  }, [navigatingFromHome])
+  function navigatingFromHome() {
+    setHomeButtonClasses('btn draw-border fade-in');
+    setNavClasses('nav-border nav-animate-border');
+  }
 
-  let navClasses = hideHome ? "no-nav-border" : "nav-border";
+  function navigatingToHome() {
+    setHomeButtonClasses('btn draw-border fade-out');
+    setNavClasses('no-nav-border');
+  }
 
   return (
       <nav className={navClasses}>
-        <Link hidden={hideHome} to="/" onClick={() => setNavigatingFromHome(false)} id="home-link" className="btn draw-border" >HOME</Link>
-        {/* <button className="btn draw-border"  onClick={() => setContactModalOpen(o => !o)}>CONTACT</button> */}
+        <Link to="/" onClick={() => navigatingToHome()} id="home-link" className={homeButtonClasses} >HOME</Link>
         {/* <Link to="/api" className="btn draw-border" >API</Link> */}
-        <Link to="/projects" onClick={() => setNavigatingFromHome(true)} className="btn draw-border" >PROJECTS</Link>
-        <Link to="/about" onClick={() => setNavigatingFromHome(true)} className="btn draw-border" >ABOUT</Link>
-        {/* <ContactModal open={contactModalOpen} onClose={() => setContactModalOpen(false)} className="btn draw-border"/> */}
+        <Link to="/projects" onClick={() => navigatingFromHome()} className="btn draw-border" >PROJECTS</Link>
+        <Link to="/about" onClick={() => navigatingFromHome()} className="btn draw-border" >ABOUT</Link>
       </nav>
   );
 }

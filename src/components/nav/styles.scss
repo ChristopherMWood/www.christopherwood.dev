@@ -26,14 +26,21 @@ nav {
   }
 
   .fade-out {
-    animation: fadeOut 1s forwards;
+    animation: fadeOut 0.5s forwards;
   }
 
   .nav-border {
     border-bottom: solid 1px white;
-    // animation: borderAnimate 1s forwards;
+  }
+
+  .nav-animate-border {
+    animation: borderAnimate 1s forwards;
   }
 
   .no-nav-border {
-    // animation: noBorderAnimate 0.5s forwards;
+    animation: noBorderAnimate 0.5s forwards;
+  }
+
+  .no-opacity {
+    opacity: 0;
   }

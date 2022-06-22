@@ -1,4 +1,5 @@
 @import "../../styles/colors.scss";
+@import "../../styles/variables.scss";
 
 $bannerFadeInLength: 3s;
 $bannerFontSize: 46px;
@@ -15,17 +16,27 @@ $bannerFontSize: 46px;
   }
   
   #front-page-banner-one {
-    font-size: $bannerFontSize;
+    font-size: 30px;
     animation: fadeIn $bannerFadeInLength forwards;
     display: inline-block;
   }
   
   #front-page-banner-two {
-    font-size: $bannerFontSize;
+    font-size: 30px;
     animation: fadeIn $bannerFadeInLength forwards;
     animation-delay: 1s;
     opacity: 0;
     display: inline-block;
+  }
+
+  @media only screen and (min-width: $small) {
+    #front-page-banner-one {
+      font-size: $bannerFontSize;
+    }
+    
+    #front-page-banner-two {
+      font-size: $bannerFontSize;
+    }
   }
   
   #social-icons-container {
