@@ -17,7 +17,7 @@ function GlobalNav() {
       }
       setFirstLoad(false);
     }
-  }, [location])
+  }, [location, firstLoad])
 
   function navigatingFromHome() {
     setHomeButtonClasses('btn draw-border fade-in');

@@ -10,7 +10,7 @@ export default function AboutPage() {
     <main>
       <div id="about-page" className="page-container">
         <p>
-        <img id="profile-photo" src={profilePhoto} alt="Christopher Wood Profile Photo" />
+        <img id="profile-photo" src={profilePhoto} alt="Christopher Wood Profile" />
           &nbsp;&nbsp;&nbsp;&nbsp;Hi, my name is Christopher. That's probably pretty obvious from the url, but oh well, here I am anyway trying to awkwardly figure out how to start this out.
           I've been programming for over <span>{ageDifMs}</span> years now and am pretty sure I will continue for the rest of my life.
           It started, as I've found out, how it did for most programmers. I played way too many video games and one day asked how do they actually work?
