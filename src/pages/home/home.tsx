@@ -11,7 +11,7 @@ function Home() {
       <div id="page-content">
         {/* <span style={{ whiteSpace: 'pre' }} ref={el} />
         <span style={{ whiteSpace: 'pre' }} ref={el2} /> */}
-        <div id="front-page-banner-one">backend developer at heart</div>
+        <div id="front-page-banner-one">back-end developer at heart</div>
         <div id="front-page-banner-two">full stack developer by trade</div>
         <div id="social-icons-container">
         <a
