@@ -6,12 +6,12 @@ function GlobalNav() {
   const location = useLocation();
   const [firstLoad, setFirstLoad] = React.useState(true);
   const [navClasses, setNavClasses] = React.useState('');
-  const [homeButtonClasses, setHomeButtonClasses] = React.useState('btn draw-border');
+  const [homeButtonClasses, setHomeButtonClasses] = React.useState('btn draw-border nav-button');
 
   React.useEffect(() => {
     if (firstLoad) {
       if (location.pathname === '/') {
-        setHomeButtonClasses('btn draw-border no-opacity');
+        setHomeButtonClasses('btn draw-border no-opacity nav-button');
       } else {
         setNavClasses('nav-border');
       }
