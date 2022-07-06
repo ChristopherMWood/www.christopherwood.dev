@@ -20,20 +20,20 @@ function GlobalNav() {
   }, [location, firstLoad])
 
   function navigatingFromHome() {
-    setHomeButtonClasses('btn draw-border fade-in');
+    setHomeButtonClasses('btn draw-border fade-in nav-button');
     setNavClasses('nav-border nav-animate-border');
   }
 
   function navigatingToHome() {
-    setHomeButtonClasses('btn draw-border fade-out');
+    setHomeButtonClasses('btn draw-border fade-out nav-button');
     setNavClasses('no-nav-border');
   }
 
   return (
       <nav className={navClasses}>
         <Link to="/" onClick={() => navigatingToHome()} id="home-link" className={homeButtonClasses} >HOME</Link>
-        <Link to="/projects" onClick={() => navigatingFromHome()} className="btn draw-border" >PROJECTS</Link>
-        <Link to="/about" onClick={() => navigatingFromHome()} className="btn draw-border" >ABOUT</Link>
+        <Link to="/projects" onClick={() => navigatingFromHome()} className="btn draw-border nav-button" >PROJECTS</Link>
+        <Link to="/about" onClick={() => navigatingFromHome()} className="btn draw-border nav-button" >ABOUT</Link>
       </nav>
   );
 }
