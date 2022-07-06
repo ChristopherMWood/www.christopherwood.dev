@@ -1,0 +1,10 @@
+@import "../../styles/colors.scss";
+
+.under-construction-container {
+    text-align: center;
+
+    a {
+        color: $highlight-red;
+        margin-left: 5px;
+    }
+}

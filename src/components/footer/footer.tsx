@@ -1,20 +1,16 @@
-import React from "react";
-import githubLogo from '../../images/GitHub-Mark-Light-120px-plus.png';
-import linkedinLogo from '../../images/linkedin-light-logo.png';
-import exercismLogo from '../../images/exercism-purple-logo.png';
 import "./styles.scss";
 
 function Footer() {
   return (
       <footer>
-        <div id="footer-social-icons">
+        <div id="footer-social-links">
           <a
             className="App-link"
             href="https://github.com/christopherMWood"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img className='footer-social-logo' src={githubLogo} alt="My GitHub profile"/>
+            GitHub
           </a>
           <a
             className="App-link"
@@ -22,7 +18,7 @@ function Footer() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img className='footer-social-logo' src={linkedinLogo} alt="My Linkedin profile"/>
+            LinkedIn
           </a>
           <a
             className="App-link"
@@ -30,7 +26,13 @@ function Footer() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img id="exercism-logo" className='footer-social-logo' src={exercismLogo} alt="My Exercism profile"/>
+            Exercism
+          </a>
+          <a 
+            href="https://stackoverflow.com/users/1833177/cmw2379" 
+            target="_blank"
+            rel="noopener noreferrer">
+              StackOverflow
           </a>
         </div>
       </footer>

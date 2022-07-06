@@ -32,7 +32,6 @@ function GlobalNav() {
   return (
       <nav className={navClasses}>
         <Link to="/" onClick={() => navigatingToHome()} id="home-link" className={homeButtonClasses} >HOME</Link>
-        {/* <Link to="/api" className="btn draw-border" >API</Link> */}
         <Link to="/projects" onClick={() => navigatingFromHome()} className="btn draw-border" >PROJECTS</Link>
         <Link to="/about" onClick={() => navigatingFromHome()} className="btn draw-border" >ABOUT</Link>
       </nav>

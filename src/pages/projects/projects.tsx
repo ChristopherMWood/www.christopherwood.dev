@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import "./styles.scss";
 import ProjectView from "../../components/projectView/projectView";
 
@@ -35,11 +37,16 @@ const projects = [
 export default function ProjectsPage() {
   return (
     <main className="page-container">
-      <h2>Under Construction</h2>
-      <div>
-        {projects.map(project => 
-          <ProjectView project={project} />
-        )}
+      <div className="under-construction-container">
+      <h2>This page is currently Under Construction</h2>
+      <p>
+        While this page is toiled away on, you can view my public projects on
+        <a href="https://www.github.com/ChristopherMWood"
+          target="_blank"
+          rel="noopener noreferrer">
+            GitHub here
+        </a>.
+      </p>
       </div>
     </main>
   );

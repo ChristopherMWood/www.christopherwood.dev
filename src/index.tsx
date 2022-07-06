@@ -11,7 +11,6 @@ import GlobalNav from "./components/nav/nav";
 import Home from "./pages/home/home";
 import About from "./pages/about/about";
 import Projects from "./pages/projects/projects";
-import Api from "./pages/api/api";
 import PageNotFound from './pages/404/404';
 
 const root = ReactDOM.createRoot(
@@ -25,7 +24,6 @@ root.render(
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="projects" element={<Projects />} />
-        <Route path="api" element={<Api />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
     </BrowserRouter>

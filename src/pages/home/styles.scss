@@ -57,6 +57,11 @@ $bannerFontSize: 46px;
     border-radius: 50px;
     border: solid 1px darkslategrey;
   }
+
+  #stackoverflow-logo {
+    border-radius: 50px;
+    background-color: white;
+  }
   
   @mixin btn-border-drawing($color: #ccc, $hover: black, $width: 2px, $vertical: top, $horizontal: left, $duration: 0.25s) {
     box-shadow: inset 0 0 0 $width $color;
