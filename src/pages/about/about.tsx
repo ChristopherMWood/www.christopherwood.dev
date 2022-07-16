@@ -25,7 +25,7 @@ export default function AboutPage() {
           For the time being, if you want to reach out to chat, feel free to message me on Linkedin. I will be updating this site with more options to contact me soon.
         </p>
         <p>
-          <b className="p-section-title">About This Site: </b> This site serves a dual purpose. The visual aspect, built using React.js, is aimed at being a living resume of sorts. But, on the back-end, it's acting as the API for projects I'm working on. I had the immediate need for an API recently and decided to expand it to be a general purpose back-end for any future needs. The front-end source code can be found <a href="https://github.com/ChristopherMWood/christopherwood.dev-frontend" target="_blank" rel="noopenerm noreferrer">here</a> and the back-end source code can be found <a href="https://github.com/ChristopherMWood/christopherwood.dev-backend" target="_blank" rel="noopenerm noreferrer">here</a>.
+          <b className="p-section-title">About This Site: </b> This site serves a dual purpose. The visual aspect, built using React.js and hosted on Cloudflare, is aimed at being a living resume of sorts. Onn the back-end, hosted on Digital Ocean, it's acting as the API for projects I'm working on. I had the immediate need for an API recently and decided to expand it to be a general purpose back-end for any future needs. The front-end source code can be found <a href="https://github.com/ChristopherMWood/www.christopherwood.dev" target="_blank" rel="noopenerm noreferrer">here</a> and the back-end source code can be found <a href="https://github.com/ChristopherMWood/api.christopherwood.dev" target="_blank" rel="noopenerm noreferrer">here</a>.
         </p>
       </div>
     </main>
