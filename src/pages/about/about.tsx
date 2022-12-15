@@ -1,5 +1,4 @@
 import "./styles.scss";
-import profilePhoto from "../../images/profile-photo.jpeg";
 
 export default function AboutPage() {
   const startDate = new Date("2009-01-01");
@@ -9,7 +8,6 @@ export default function AboutPage() {
     <main>
       <div id="about-page" className="page-container">
         <p>
-          <img id="profile-photo" src={profilePhoto} alt="Christopher Wood Profile" />
           <b className="p-section-title">About Me: </b> Hi, my name is Christopher. That's probably pretty obvious from the URL, but oh well, here I am anyway trying to awkwardly figure out how to start this out. I've been programming for over {ageDifMs} years now and don’t see myself ever stopping. It started for me as it did for a lot of people. I played way too many video games and one day asked how do they actually work? I looked up advice online and everyone kept saying real programmers learn C++... so I made the terrible decision of learning C++ as my first language. A year of awkward text-based games and confusing compiler settings later and I was hooked. From there it turned into joining several startups, working with some non-profits, a college degree, then full-time work.
         </p>
         <p>
@@ -25,7 +23,7 @@ export default function AboutPage() {
           For the time being, if you want to reach out to chat, feel free to message me on Linkedin. I will be updating this site with more options to contact me soon.
         </p>
         <p>
-          <b className="p-section-title">About This Site: </b> This site serves a dual purpose. The visual aspect, built using React.js, is aimed at being a living resume of sorts. But, on the back-end, it's acting as the API for projects I'm working on. I had the immediate need for an API recently and decided to expand it to be a general purpose back-end for any future needs. The front-end source code can be found <a href="https://github.com/ChristopherMWood/christopherwood.dev-frontend" target="_blank" rel="noopenerm noreferrer">here</a> and the back-end source code can be found <a href="https://github.com/ChristopherMWood/christopherwood.dev-backend" target="_blank" rel="noopenerm noreferrer">here</a>.
+          <b className="p-section-title">About This Site: </b> This site serves a dual purpose. The visual aspect, built using React.js and hosted on Cloudflare, is aimed at being a living resume of sorts. Onn the back-end, hosted on Digital Ocean, it's acting as the API for projects I'm working on. I had the immediate need for an API recently and decided to expand it to be a general purpose back-end for any future needs. The front-end source code can be found <a href="https://github.com/ChristopherMWood/www.christopherwood.dev" target="_blank" rel="noopenerm noreferrer">here</a> and the back-end source code can be found <a href="https://github.com/ChristopherMWood/api.christopherwood.dev" target="_blank" rel="noopenerm noreferrer">here</a>.
         </p>
       </div>
     </main>
