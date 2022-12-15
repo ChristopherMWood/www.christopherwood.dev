@@ -1,5 +1,4 @@
 import "./styles.scss";
-import profilePhoto from "../../images/profile-photo.jpeg";
 
 export default function AboutPage() {
   const startDate = new Date("2009-01-01");
@@ -9,7 +8,6 @@ export default function AboutPage() {
     <main>
       <div id="about-page" className="page-container">
         <p>
-          <img id="profile-photo" src={profilePhoto} alt="Christopher Wood Profile" />
           <b className="p-section-title">About Me: </b> Hi, my name is Christopher. That's probably pretty obvious from the URL, but oh well, here I am anyway trying to awkwardly figure out how to start this out. I've been programming for over {ageDifMs} years now and don’t see myself ever stopping. It started for me as it did for a lot of people. I played way too many video games and one day asked how do they actually work? I looked up advice online and everyone kept saying real programmers learn C++... so I made the terrible decision of learning C++ as my first language. A year of awkward text-based games and confusing compiler settings later and I was hooked. From there it turned into joining several startups, working with some non-profits, a college degree, then full-time work.
         </p>
         <p>
